@@ -54,6 +54,18 @@ Run the Spanish keyboard caret remap:
 bash scripts/setup_spanish_caret_key.sh
 ```
 
+## Running Over SSH
+
+From this repository, run:
+
+```bash
+scp scripts/setup_nama_compose.sh scripts/setup_spanish_caret_key.sh docs/user-cheatsheet.md aucoop@HOST:/home/aucoop/ && ssh aucoop@HOST 'chmod +x /home/aucoop/setup_nama_compose.sh /home/aucoop/setup_spanish_caret_key.sh && /home/aucoop/setup_nama_compose.sh && DISPLAY=:0 XAUTHORITY=/home/aucoop/.Xauthority /home/aucoop/setup_spanish_caret_key.sh && mkdir -p /home/aucoop/Desktop && cp /home/aucoop/user-cheatsheet.md /home/aucoop/Desktop/nama-keyboard-cheatsheet.md'
+```
+
+Replace `HOST` with the target IP address.
+
+If the remote machine uses password authentication, use `sshpass` in front of `scp` and `ssh`.
+
 ## Notes
 
 - The caret remap is intended for the remote Nama Linux Mint computers, not for Spanish-language machines.
