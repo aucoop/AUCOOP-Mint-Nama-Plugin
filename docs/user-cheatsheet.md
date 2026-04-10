@@ -1,12 +1,8 @@
 ---
-title: Nama Keyboard Cheatsheet
+pagetitle: Nama Keyboard Cheatsheet
 css:
   - user-cheatsheet.css
 ---
-
-# Nama Keyboard Cheatsheet
-
-Tap `Right Ctrl` once, then type the rest of the sequence.
 
 ## Click Letters
 
