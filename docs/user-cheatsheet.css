@@ -1,0 +1,112 @@
+@page {
+  size: A4;
+  margin: 11mm;
+}
+
+:root {
+  --accent: #2e5090;
+  --line: #d9e0ea;
+  --soft: #f3f6fb;
+  --text: #17202a;
+  --muted: #4a5568;
+}
+
+html {
+  font-size: 14px;
+}
+
+body {
+  column-count: 2;
+  column-gap: 16mm;
+  color: var(--text);
+  font-family: "Noto Serif", serif;
+  line-height: 1.24;
+}
+
+h1 {
+  margin: 0 0 0.3rem;
+  color: var(--accent);
+  font-size: 1.55rem;
+  line-height: 1.05;
+}
+
+h2 {
+  margin: 0.75rem 0 0.28rem;
+  color: var(--accent);
+  font-size: 1rem;
+  line-height: 1.1;
+  break-after: avoid;
+}
+
+p {
+  margin: 0 0 0.45rem;
+}
+
+table {
+  width: 100%;
+  margin: 0 0 0.65rem;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+  break-inside: avoid;
+}
+
+thead {
+  break-inside: avoid;
+}
+
+th {
+  padding: 0.38rem 0.45rem;
+  border-bottom: 2px solid var(--accent);
+  color: var(--accent);
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+td {
+  padding: 0.34rem 0.45rem;
+  border-bottom: 1px solid var(--line);
+  vertical-align: middle;
+}
+
+tbody tr:nth-child(odd) td {
+  background: var(--soft);
+}
+
+td:last-child {
+  width: 3.4rem;
+  font-size: 1.18rem;
+  text-align: center;
+}
+
+code {
+  padding: 0.08rem 0.34rem;
+  border: 1px solid #d5dbe5;
+  border-radius: 0.34rem;
+  background: #f7f8fa;
+  font-family: "Noto Sans Mono", monospace;
+  font-size: 0.84em;
+  white-space: nowrap;
+}
+
+p code {
+  color: var(--muted);
+}
+
+@media print {
+  html {
+    font-size: 13px;
+  }
+
+  body {
+    margin: 0;
+    column-fill: balance;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+}

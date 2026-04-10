@@ -38,7 +38,8 @@ Macron vowels:
 
 - `scripts/setup_nama_compose.sh`: installs Compose key and `~/.XCompose`
 - `scripts/setup_spanish_caret_key.sh`: remaps the Spanish accent key to `^`
-- `docs/user-cheatsheet.md`: simple end-user guide
+- `docs/user-cheatsheet.md`: end-user guide in plain Markdown
+- `docs/user-cheatsheet.css`: shared screen and print styling for the cheatsheet
 
 ## Usage
 
@@ -65,6 +66,34 @@ scp scripts/setup_nama_compose.sh scripts/setup_spanish_caret_key.sh docs/user-c
 Replace `HOST` with the target IP address.
 
 If the remote machine uses password authentication, use `sshpass` in front of `scp` and `ssh`.
+
+## Cheatsheet PDF
+
+The cheatsheet source stays in Markdown so it also works as an online document.
+
+Generate HTML:
+
+```bash
+pandoc docs/user-cheatsheet.md -s -o docs/user-cheatsheet.html
+```
+
+Print the HTML to PDF with Chromium:
+
+```bash
+chromium --headless --disable-gpu --print-to-pdf="docs/user-cheatsheet.pdf" "file://$(pwd)/docs/user-cheatsheet.html"
+```
+
+## GitHub Pages
+
+This repository can serve the cheatsheet directly from `docs/` with GitHub Pages.
+
+After enabling Pages with source `Deploy from a branch`, branch `master`, folder `/docs`, the cheatsheet will be available at:
+
+```text
+https://aucoop.github.io/AUCOOP-Mint-Nama-Plugin/
+```
+
+`docs/index.html` redirects to `docs/user-cheatsheet.html` so teachers can use the shorter URL.
 
 ## Notes
 

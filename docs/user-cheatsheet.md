@@ -1,76 +1,46 @@
 ---
-mainfont: Noto Serif
-monofont: Noto Sans Mono
-header-includes:
-  - '\usepackage{needspace}'
+title: Nama Keyboard Cheatsheet
+css:
+  - user-cheatsheet.css
 ---
 
-# Nama Keyboard Quick Guide
+# Nama Keyboard Cheatsheet
 
-This computer is set up so you can type Nama click letters and long vowels more easily.
-
-## The Special Key
-
-Use the `Right Ctrl` key as the special typing key.
-
-How to use it:
-
-1. Press and release `Right Ctrl`
-2. Press the next key in the sequence
-3. Press the last key
-
-Do not hold `Right Ctrl` down.
+Tap `Right Ctrl` once, then type the rest of the sequence.
 
 ## Click Letters
 
-\Needspace{8\baselineskip}
-
-| Type this | You get |
-| --- | --- |
-| `Right Ctrl`, `c`, `1` | `ǀ` |
-| `Right Ctrl`, `c`, `2` | `ǁ` |
-| `Right Ctrl`, `c`, `3` | `ǃ` |
-| `Right Ctrl`, `c`, `4` | `ǂ` |
+| Sequence | Output |
+|---|---|
+| `Right Ctrl` `c` `1` | `ǀ` |
+| `Right Ctrl` `c` `2` | `ǁ` |
+| `Right Ctrl` `c` `3` | `ǃ` |
+| `Right Ctrl` `c` `4` | `ǂ` |
 
 ## Long Vowels
 
-First press `Right Ctrl`, then `-`, then the letter.
+| Sequence | Output |
+|---|---|
+| `Right Ctrl` `-` `a` | `ā` |
+| `Right Ctrl` `-` `e` | `ē` |
+| `Right Ctrl` `-` `i` | `ī` |
+| `Right Ctrl` `-` `o` | `ō` |
+| `Right Ctrl` `-` `u` | `ū` |
+| `Right Ctrl` `-` `A` | `Ā` |
+| `Right Ctrl` `-` `E` | `Ē` |
+| `Right Ctrl` `-` `I` | `Ī` |
+| `Right Ctrl` `-` `O` | `Ō` |
+| `Right Ctrl` `-` `U` | `Ū` |
 
-\Needspace{9\baselineskip}
+## Circumflex Vowels
 
-| Type this | You get |
-| --- | --- |
-| `Right Ctrl`, `-`, `a` | `ā` |
-| `Right Ctrl`, `-`, `e` | `ē` |
-| `Right Ctrl`, `-`, `i` | `ī` |
-| `Right Ctrl`, `-`, `o` | `ō` |
-| `Right Ctrl`, `-`, `u` | `ū` |
+The accent key types `^` directly.
 
-Capital letters also work:
-
-\Needspace{9\baselineskip}
-
-| Type this | You get |
-| --- | --- |
-| `Right Ctrl`, `-`, `A` | `Ā` |
-| `Right Ctrl`, `-`, `E` | `Ē` |
-| `Right Ctrl`, `-`, `I` | `Ī` |
-| `Right Ctrl`, `-`, `O` | `Ō` |
-| `Right Ctrl`, `-`, `U` | `Ū` |
-
-## Circumflex Letters
-
-The accent key has been changed so it gives `^` directly.
-
-First press `Right Ctrl`, then `^`, then the letter.
-
-\Needspace{10\baselineskip}
-
-| Type this | You get |
-| --- | --- |
-| `Right Ctrl`, `^`, `a` | `â` |
-| `Right Ctrl`, `^`, `i` | `î` |
-| `Right Ctrl`, `^`, `u` | `û` |
-| `Right Ctrl`, `^`, `A` | `Â` |
-| `Right Ctrl`, `^`, `I` | `Î` |
-| `Right Ctrl`, `^`, `U` | `Û` |
+| Sequence | Output |
+|---|---|
+| `Right Ctrl` `^` `a` | `â` |
+| `Right Ctrl` `^` `i` | `î` |
+| `Right Ctrl` `^` `u` | `û` |
+| `Right Ctrl` `^` `A` | `Â` |
+| `Right Ctrl` `^` `I` | `Î` |
+| `Right Ctrl` `^` `U` | `Û` |
